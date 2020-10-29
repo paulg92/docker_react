@@ -5,5 +5,5 @@ services:
 before-install:
   - docker build -t epic_varahamihira/docker_react -f Dockerfile.dev .
 
-scrip:
+script:
   - docker run epic_varahamihira/docker_react npm run test -- --coverage
